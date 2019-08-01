@@ -1,0 +1,14 @@
+#realisation {
+    h2 {
+        font-size: 4em;
+        margin-bottom: 1em;
+    }
+    #realContainer {
+        display: flex;
+        flex-wrap: wrap;
+        
+        div {
+            background-image: url('../medias/dices.jpg');
+        }
+    }
+}

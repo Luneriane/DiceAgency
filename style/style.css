@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Alice&display=swap");
+#myToggle {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  border: solid 0.1em dodgerblue;
+  background-color: white;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+}
+#myToggle i {
+  position: absolute;
+  width: 100%;
+  margin-top: 0.35em;
+  text-align: center;
+  font-size: 1.75em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 12em;
+  height: 10vh;
+  padding-top: 0.5em;
+}
+nav h4 {
+  position: absolute;
+  padding: 0.5em 0.75em;
+  background-color: white;
+  text-align: center;
+  border: solid thin dodgerblue;
+  border-right: solid 0.2em dodgerblue;
+  border-left: none;
+  border-radius: 0 0.5em 0.5em 0;
+}
+nav h4 i {
+  margin: 0 0.75em;
+}
+nav ul {
+  position: absolute;
+  top: 3em;
+}
+nav ul li {
+  margin: 0.5em;
+}
+nav ul li h5 {
+  display: inline;
+}
+nav ul li h5:hover {
+  color: maroon;
+  font-size: 1em;
+  text-shadow: 0.1em 0.1em 0.2em dodgerblue;
+}
+
+header {
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0.3em 0.2em rgba(255, 255, 255, 0.25);
+  border-radius: 2em;
+}
+header h1 {
+  font-size: 8em;
+  width: 100%;
+  padding-top: 10%;
+  padding-left: 10%;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+header p {
+  font-size: 3.75em;
+  padding: 1em 20%;
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+
+#presentation p {
+  padding: 2em;
+  text-align: justify;
+}
+#presentation h3 {
+  margin: 2em;
+}
+#presentation #team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#presentation #team div {
+  width: 13em;
+  padding: 0.75em 0.75em 1.5em;
+  background-color: white;
+  border-radius: 0.1em;
+  box-shadow: 0.1em 0.1em 0.4em black;
+}
+#presentation #team div img {
+  margin-bottom: 0.75em;
+  border-radius: 0.1em;
+  width: 100%;
+  max-width: 400px;
+}
+
+#services #servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#services #servicesContainer .cardServices {
+  margin: 1em;
+}
+#services #servicesContainer .cardServices h3 {
+  position: relative;
+  width: 9em;
+  padding: 0.5em 0.75em;
+  background-color: #ac9292;
+  text-align: center;
+  border-radius: 40%/50%;
+}
+#services #servicesContainer .cardServices h3::after {
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  content: " ";
+  height: 2rem;
+  width: 0.1rem;
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  border-top: 1em solid #ac9292;
+  transform: rotateZ(20deg);
+}
+#services #servicesContainer .cardServices p {
+  margin-top: 0.75em;
+}
+
+#realisation h2 {
+  font-size: 4em;
+  margin-bottom: 1em;
+}
+#realisation #realContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+#realisation #realContainer div {
+  background-image: url("../medias/dices.jpg");
+}
+
+#contact form {
+  display: block;
+  margin-left: 50%;
+  transform: translate(-50%);
+  width: 27em;
+  text-align: center;
+}
+#contact form fieldset {
+  width: 27em;
+}
+#contact form fieldset legend {
+  padding: 1em;
+}
+#contact form fieldset input {
+  width: 15em;
+  padding: 0.5em;
+  margin-bottom: 1.25em;
+}
+#contact form fieldset select {
+  padding: 0.5em;
+  margin-bottom: 1.25em;
+}
+#contact form fieldset textarea {
+  width: 30em;
+  height: auto;
+  min-height: 20em;
+  margin-bottom: 1.25em;
+}
+#contact form button {
+  margin: 1em 40% 1em;
+  padding: 1em;
+  width: 10em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-image: url("../medias/dices_light.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: lightcyan;
+  color: midnightblue;
+  font-size: 1.1em;
+  font-family: "Alice", serif;
+  padding: 2em 5em 2em 11em;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+main section {
+  min-height: 100vh;
+  border-top: groove 0.3em purple;
+  border-right: groove 0.3em purple;
+  border-left: solid 0.1em purple;
+  border-radius: 2em;
+  margin-top: 4em;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+main section h2 {
+  font-size: 4em;
+  margin: 0.25em 0.5em 0.5em;
+}
+main.darkTheme {
+  background-image: url("../medias/dices_dark.jpg");
+  background-color: midnightblue;
+  color: dodgerblue;
+}
+main.darkTheme #myToggle {
+  background-color: black;
+}
+main.darkTheme #myToggle #toggleDark {
+  z-index: 2;
+}
+main.darkTheme h4 {
+  background-color: black;
+}
+main.darkTheme section, main.darkTheme header {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main.darkTheme header h1, main.darkTheme header p {
+  text-shadow: 0.1rem 0.1rem 0.2rem lightblue;
+}
+
+/*# sourceMappingURL=style.css.map */

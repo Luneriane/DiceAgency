@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Alice&display=swap');
+@import 'toggle';
+@import 'navMenu';
+@import 'header';
+@import 'presentation';
+@import 'services';
+@import 'realisations';
+@import 'contact';
+@import 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: url('../medias/dices_light.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: lightcyan;
+    color: midnightblue;
+    font-size: 1.1em;
+    font-family: 'Alice', serif;
+
+    padding: 2em 5em 2em 11em;
+    background-color: rgba(white, 0.75);
+
+    section {
+        min-height: 100vh;
+        border-top: groove 0.3em purple;
+        border-right: groove 0.3em purple;
+        border-left: solid 0.1em purple;
+        border-radius: 2em;
+        margin-top: 4em;
+        background-color: rgba(white, 0.5);
+
+        h2 {
+            font-size: 4em;
+            margin: 0.25em 0.5em 0.5em;
+        }
+    }
+
+    &.darkTheme {
+        background-image: url('../medias/dices_dark.jpg');
+        background-color: midnightblue;
+        color: dodgerblue;
+
+        #myToggle {
+            background-color: black;
+
+            #toggleDark {
+                z-index: 2;
+            }
+        }
+
+        h4 {
+            background-color: black;
+        }
+
+        section, header {
+            background-color: rgba(black, 0.5);
+        }
+        header h1, header p {
+            
+        text-shadow: 0.1rem 0.1rem 0.2rem lightblue;
+        }
+    }
+}

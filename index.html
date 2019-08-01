@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dice Agency</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+    <main id="myMain">
+    <!-- Toggle thème clair/obscur-->
+        <div id="myToggle">
+            <i id="toggleLight" class="far fa-lightbulb"></i>
+            <i id="toggleDark" class="fas fa-lightbulb"></i>
+        </div>
+        
+        <!-- Menu latéral -->
+        <nav>
+            <h4>
+                <i class="fas fa-dice-d20"></i>
+                Menu
+                <i class="fas fa-dice-d20"></i>
+            </h4>
+            <ul>
+                <li>
+                    <i class="fas fa-dice-d6"></i>
+                    <h5>Top</h5>
+                </li>
+                <li>
+                    <i class="fas fa-dice-d6"></i>
+                    <h5>Qui sommes-nous ?</h5>
+                </li>
+                <li>
+                    <i class="fas fa-dice-d6"></i>
+                    <h5>Nos services</h5>
+                </li>
+                <li>
+                    <i class="fas fa-dice-d6"></i>
+                    <h5>Nos réalisations</h5>
+                </li>
+                <li>
+                    <i class="fas fa-dice-d6"></i>
+                    <h5>Nous contacter</h5>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Header -->
+        <header>
+            <h1>Dice Agency</h1>
+            <p>Life is a serious game !</p>
+        </header>
+        
+        <!-- Présentation -->
+        <section id="presentation">
+            <h2>Qui sommes-nous ?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum animi nemo accusantium, quam vitae corrupti incidunt, quasi iste aliquid voluptatibus repudiandae quod beatae rem unde atque aspernatur quae enim! Possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at quod aut, vel distinctio perferendis dolorem dolor neque voluptas rerum nam fugiat esse minima quo totam iste quis sint pariatur.</p>
+            <h3> Notre équipe</h3>
+            <div id="team">
+                <div class="teamPortrait">
+                    <img src="./medias/Lucifer.jpg" alt="">
+                    <h4>Lucifer</h4>
+                    <h6>Community Manager - CEO</h6>
+                </div>
+                <div class="teamPortrait">
+                    <img src="./medias/Fiona.jpg" alt="">
+                    <h4>Fiona</h4>
+                    <h6>C++ / Python</h6>
+                </div>
+                <div class="teamPortrait">
+                    <img src="./medias/Dante.png" alt="">
+                    <h4>Dante</h4>
+                    <h6>Graphiste</h6>
+                </div>
+                <div class="teamPortrait">
+                    <img src="./medias/Neytiri.jpg" alt="">
+                    <h4>Neytiri</h4>
+                    <h6>Sécurité</h6>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services -->
+        <section id="services">
+            <h2>Nos services</h2>
+            <div id="servicesContainer">
+                <div class="cardServices">
+                    <h3>Evènementiel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione atque recusandae perspiciatis magni nobis! Consequatur culpa mollitia adipisci eligendi dolore porro officiis ducimus nostrum beatae delectus. Eius qui iure voluptates.</p>
+                </div>
+                <div class="cardServices">
+                    <h3>Site Associatif</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni ullam libero exercitationem, aut blanditiis minus ut ipsa quas harum earum dignissimos necessitatibus cum doloribus porro labore possimus aliquid accusamus?</p>
+                </div>
+                <div class="cardServices">
+                    <h3>Site commercial</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium expedita commodi pariatur sint saepe labore qui recusandae dolorum repellendus et earum tempora esse ut similique corrupti autem, porro aliquid quis.</p>
+                </div>
+                <div class="cardServices">
+                    <h3>Applications</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam facere atque nulla sequi, earum eius iusto dolore possimus vero, molestiae facilis unde dolorum amet cupiditate deserunt libero fuga repellat debitis.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Réalisations -->
+        <section id="realisations">
+            <h2>Nos réalisations</h2>
+            <div id="realContainer">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Nous contacter</h2>
+            <form>
+                <fieldset>
+                    <legend id="nameLabel">Votre nom :</legend>
+                    <input id="nameInput" type="text" placeholder="John Doe" required>
+                </fieldset>
+                <fieldset>
+                    <legend id="emailLabel">Votre email : </legend>
+                    <input id="emailInput" type="email" name="email" placeholder="your@e.mail" required>
+                </fieldset>
+                <fieldset>
+                    <legend id="subjectLabel">Votre sujet : </legend>
+                    <select required>
+                        <option value="">Sélectionnez une option</option>
+                        <option value="devis">Demande de devis</option>
+                        <option value="presse">Presse</option>
+                        <option value="recrutement">Recrutement</option>
+                        <option value="litige">Littige</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend id="messageLabel">Votre message : </legend>
+                    <textarea id="messageArea"></textarea>
+                </fieldset>
+                <button id="submit" type="submit">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="icons-container">
+            <p>Follow us on</p>
+    
+            <a href="https://github.com/" target="_blank"> <i class="fab fa-github github"></i></a>
+            <a href="https://fr-fr.facebook.com/6labagency/" target="_blank"> <i class="fab fa-facebook-f facebook"></i>
+            </a>
+            <a href="https://twitter.com/agencenetdesign?lang=fr" target="_blank"> <i
+                    class="fab fa-twitter twitter"></i></a>
+            <a href=""> <i class="fab fa-google-plus-g google"></i></a>
+        </div>
+    </footer>
+
+    <script src="./javascript.js"></script>
+</body>
+</html>

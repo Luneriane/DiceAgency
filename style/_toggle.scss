@@ -1,0 +1,19 @@
+#myToggle {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: solid 0.1em dodgerblue;
+    background-color: white;
+    box-shadow: 0 0 0.5em rgba(black, 0.25);
+
+    i {
+        position: absolute;
+        width: 100%;
+        margin-top: 0.35em;
+        text-align: center;
+        font-size: 1.75em;
+    }
+}

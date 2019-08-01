@@ -1,0 +1,41 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12em;
+    height: 10vh;
+    padding-top: 0.5em;
+
+    h4 {
+        position: absolute;
+        padding: 0.5em 0.75em;
+        background-color: white;
+        text-align: center;
+        border: solid thin dodgerblue;
+        border-right: solid 0.2em dodgerblue;
+        border-left: none;
+        border-radius: 0 0.5em 0.5em 0;
+
+        i {
+            margin: 0 0.75em;
+        }
+    }
+    ul {
+        position: absolute;
+        top: 3em;
+
+        li {
+            margin: 0.5em;
+
+            h5 {
+                display: inline;
+
+                &:hover {
+                    color :maroon;
+                    font-size: 1em;
+                    text-shadow: 0.1em 0.1em 0.2em dodgerblue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+#services {
+    #servicesContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .cardServices {
+
+            margin: 1em;
+
+            h3 {
+                position: relative;
+                width: 9em;
+                padding: 0.5em 0.75em;
+                background-color: rgb(172, 146, 146);
+                text-align: center;
+                border-radius: 40% / 50%;
+
+                &::after {
+                    position: absolute;
+                    left: 0;
+                    top: 1.5em;
+                    content: " ";
+                    height: 2rem;
+                    width: 0.1rem;
+                    border-left: 0.5em solid transparent; 
+                    border-right: 0.5em solid transparent; 
+                    border-top: 1em solid rgb(172, 146, 146);
+                    transform: rotateZ(20deg);
+                }
+            }
+            p {
+                margin-top: 0.75em;
+            }
+        }
+    }
+}

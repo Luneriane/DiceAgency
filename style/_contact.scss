@@ -1,0 +1,38 @@
+#contact {
+    form {
+        display: block;
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 27em;
+        text-align: center;
+    
+        fieldset {
+            width: 27em;
+
+            legend {
+                padding: 1em;
+            }
+            
+            input {
+                width: 15em;
+                padding: 0.5em;
+                margin-bottom: 1.25em;
+            }
+            select {
+                padding: 0.5em;
+                margin-bottom: 1.25em;
+            }
+            textarea {
+                width: 30em;
+                height: auto;
+                min-height: 20em;
+                margin-bottom: 1.25em;
+            }
+        }
+        button {
+            margin: 1em 40% 1em;
+            padding: 1em;
+            width: 10em;
+        }
+    }
+}
